@@ -1,0 +1,35 @@
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore the virtual environment
+venv/
+env/
+.myvenv/
+
+# Ignore the database file (if you use SQLite)
+db.sqlite3
+
+# Ignore log files
+*.log
+
+# Ignore static and media files (if managed by Django)
+static/
+media/
+
+# Ignore local settings
+settings_local.py
+
+# Ignore IDE files (specific to PyCharm, you can add others for other IDEs)
+.idea/
+.vscode/
+
+# Ignore any sensitive or confidential files
+secret_key.txt
+*.secret
+
+# Ignore backup files
+*.bak
+
+# Ignore any file or folder that should not be tracked
+file_or_folder_to_ignore/
