@@ -4,11 +4,12 @@
 
 <h1>This is the users MAIN page</h1>
 <br>
-<h4>Some User:</h4>
+<h4>Users saved in our database:</h4>
 <ul>
-  {% for number in '012'|make_list %}
-    <li>Toy Story {{forloop.counter}}</li>
-  {% endfor %}
+{% for user in users_list %}
+
+  <li>{{user.username}} ({{user.email}})</li>
+{% endfor %}
 </ul>
 
 {% endblock  %}
