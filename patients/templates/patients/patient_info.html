@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>This is the patients PATIENT_INFO page</h1>
+<br>
+{% if pacientinfo %}
+  <h4>name: {{pacientinfo.name}}</h4>
+  <h4>date_of_birth: {{pacientinfo.date_of_birth}}</h4>
+{% else %}
+  <h4>name: not informed</h4>
+  <h4>date_of_birth: not informed</h4>
+{% endif %}
+{% endblock  %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>This is the patients MAIN page</h1>
+<br>
+<h4>My patients are:</h4>
+<ul>
+  {% for number in '012'|make_list %}
+    <li>Patient {{forloop.counter}}</li>
+  {% endfor %}
+</ul>
+{% endblock  %}
