@@ -1,17 +1,11 @@
 from django.db import models
 
 
-class Genre(models.Model):
-    name = models.CharField(max_length=150)
+class User(models.Model):
+    username = models.CharField(max_length=100, unique=True)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=128)
+    # Add other fields related to user information
 
     def __str__(self):
-        return self.name
-
-
-class Film(models.Model):
-    title = models.CharField(max_length=200)
-    year = models.PositiveIntegerField()
-    genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.title
+        return self.username
