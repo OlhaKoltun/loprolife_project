@@ -9,7 +9,7 @@ def main(request):
     title = 'Main Page'
 
     return render(request,
-                  'app_users/main.html',
+                  'accounts/main.html',
                   {'title': title})
 
 
@@ -22,5 +22,5 @@ def user_info(request):
                'title': 'User Info Page'}
 
     return render(request,
-                  'app_users/user_info.html',
+                  'accounts/user_info.html',
                   context)
